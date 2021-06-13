@@ -69,14 +69,14 @@ static void initializer(void) {
             main = main.presentedViewController;
         }
         UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Exploiting and rooting"
-                                                                       message:@"This will take some time..." preferredStyle:UIAlertControllerStyleAlert];
+                                                                       message:@” Wait wait wait hold them cause they say i'm almost lost it , i have to reach back,and lock it..." preferredStyle:UIAlertControllerStyleAlert];
         [main presentViewController:alert animated:YES completion:^{
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                 start();
                 free(redeem_racers);
                 [alert dismissViewControllerAnimated:YES completion:^{ }];
                 UIAlertController* alert2 = [UIAlertController alertControllerWithTitle:@"Notice"
-                                                                               message:@"RickFilza(PlankFilza's other version made by pwned rick sanchez(twitter:@pwned4ever2)) is brought to you by the work of Brandon Plank, Lakr, Pwned Rick Sanchez and ModernPwner. We are not responsable for anything bad happening to your device, to the extent of applicable law.\n\nYou may get errors regarding binary modifacations, we cannot legally dismiss that pop-up as it is part of the Filza DRM" preferredStyle:UIAlertControllerStyleAlert];
+                                                                               message:@"RickFilza made by pwned rick sanchez(twitter:@pwned4ever2) is brought to you by the work of Brandon Plank, Lakr, Pwned Rick Sanchez and ModernPwner. We are not responsable for anything bad happening to your device, to the extent of applicable law.\n\nYou may get errors regarding binary modifacations, we cannot legally dismiss that pop-up as it is part of the Filza DRM" preferredStyle:UIAlertControllerStyleAlert];
                 [alert2 addAction:[UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleCancel handler:^(UIAlertAction * action) {
                     [alert2 dismissViewControllerAnimated:YES completion:^{ }];
                 }]];
